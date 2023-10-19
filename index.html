@@ -1,116 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Happy Birthday!</title>
-	<style>  
-        .container {  
-            background-color: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);  
-            padding: 20px;  
-            border-radius: 1px;  
-            width: 80%;  
-            max-width: 200px;  
-            text-align: center;  
-			display: flex;  
-            justify-content: center;  
-            align-items: center;  
-        }
-        .button {  
-            background-color: #4CAF50;  
-            border: none;  
-            color: white;  
-            padding: 10px 20px;  
-            text-align: center;  
-            text-decoration: none;  
-            display: inline-block;  
-            font-size: 16px;  
-            margin: 10px 2px;  
-            cursor: pointer;  
-            border-radius: 5px;  
-        }
-        .button:hover {  
-            background-color: #45a049;  
-        }
-    </style> 
-	<link rel="stylesheet" href="css/style.css">
-	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=2046933405&auto=1&height=32"></iframe>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Happy Birthday!</title>
+  
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
 
 <body>
-
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<bokeh></bokeh>
-	<div class="mobile">最大化查看</div>
-	<div class="pyro">
-	<div class="before"></div>
-	<div class="after"></div>
-	</div>
-	<h1>My Love in Life!</h1>
-	<h2>Happy Birthday DearQjy!</h2>
+  <canvas id=c></canvas>
+  <canvas id="confetti"></canvas>
+  
+  <div class="container" id="count">
 	
-	<span>🎉</span>  
-	<div class="candle">
-	<div id="flame" class="lit"></div>
-	</div>
+    <h1 id="head">Countdown to your birthday:</h1>
+    <ul>
+      <li><span id="day"></span>days</li>
+      <li><span id="hour"></span>hours</li>
+      <li><span id="minute"></span>minutes</li>
+      <li><span id="second"></span>seconds</li>
+    </ul>
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=2046933405&auto=1&height=32"></iframe>
 
-	<div class="cake">
+  </div>
+  <div id="merrywrap" class="merrywrap">
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=2046933405&auto=1&height=32"></iframe>
+
+    <canvas id="snowfall"></canvas>
 	<div class="container"> 
-		<a href="index_gridea.html" class="button">查看我的心意</a> 
-		
+		<a href="index_gridea.html" class="button">🎉查看我的心意</a> 
 	</div>
-	
-	</div>
-	
-	<div class="plate"></div>
-
-
-
+    <div class="giftbox">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
 </body>
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
 
 </html>
-
